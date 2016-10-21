@@ -1,0 +1,7 @@
+@               IN SOA          <%= @fqdn %>. root.<%= @fqdn %>. (
+                                2012032222      ; serial
+                                1H              ; refresh
+                                1H              ; retry
+                                1W              ; expiry
+                                1D )            ; minimum
+<%= @name %>.       IN NS <%= @fqdn %>.

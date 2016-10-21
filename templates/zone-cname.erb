@@ -1,0 +1,4 @@
+<% if @name != '' -%>
+<%= @hostname %>. IN CNAME    <%= @target %>.
+*.<%= @hostname %>. IN CNAME    <%= @target %>.
+<% end -%>

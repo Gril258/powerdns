@@ -1,0 +1,4 @@
+<% if @name != '' -%>
+<% octets = @ip.split('.') -%>
+<%= octets[3] %>.<%= octets[2] %>.<%= octets[1] %>      IN PTR  <%= @hostname %>.
+<% end -%>
