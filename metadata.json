@@ -12,5 +12,4 @@
     "operatingsystem": "Debian",
     "operatingsystemrelease": ["8.0"]
   }],
-  "data_provider": "hiera"
 }
