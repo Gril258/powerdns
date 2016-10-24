@@ -15,6 +15,7 @@ class powerdns (
     $rec_thread = 50,
     $dis_thread = 50,
     $backend = 'bind',
+    $zone_list = { 'local' => {}, 'remote' => {}}
   ) {
 
   package { 'pdns-server':
