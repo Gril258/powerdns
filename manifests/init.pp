@@ -15,7 +15,7 @@ class powerdns (
     $rec_thread = 50,
     $dis_thread = 50,
     $backend = 'bind',
-    $zone_list = { 'local' => {}, 'remote' => {}}
+    $zone_list = { 'local' => {}, '10.in-addr.arpa' => {}, '168.192.in-addr.arpa' => {}}
   ) {
 
   package { 'pdns-server':
@@ -65,14 +65,6 @@ class powerdns (
     enable     => true,
     hasrestart => true,
     hasstatus  => true,
-  }
-
-  $zone_list = {
-    'geo' => {},
-    '10.in-addr.arpa' => {},
-    'ipg' => {},
-    'klasterka' => {},
-    'dal' => {},
   }
 
   concat { '/etc/powerdns/zone.include':
