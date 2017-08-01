@@ -9,7 +9,6 @@ class powerdns (
     $setgid = 'pdns',
     $setuid = 'pdns',
     $max_cache_ttl = undef,
-    $forward_zones = undef,
     $server_address = $::ipaddress,
     $server_port = 10053,
     $rec_thread = 50,
