@@ -14,6 +14,7 @@ class powerdns (
     $rec_thread = 50,
     $dis_thread = 50,
     $backend = 'bind',
+    $version = 4,
     $zone_list = { 'local' => {}, '10.in-addr.arpa' => {}, '168.192.in-addr.arpa' => {}}
   ) {
 

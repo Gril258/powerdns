@@ -8,7 +8,11 @@ allow-axfr-ips=<%= @allow_from %>
 #################################
 # allow-recursion       List of netmasks that are allowed to recurse
 #
+<% if @version < 5 %>
 allow-recursion=<%= @allow_from %>
+<% else %>
+#allow-recursion=<%= @allow_from %>
+<% end %>
 
 #################################
 # cache-ttl     Seconds to store packets in the PacketCache
