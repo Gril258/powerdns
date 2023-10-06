@@ -4,6 +4,7 @@
 class powerdns (
     $allow_from = '127.0.0.0/8, 10.0.0.0/8, 192.168.0.0/16,',
     $forward_zones = undef,
+    $forward_zones_recurse = undef,
     $recursor_address = '127.0.0.1',
     $recursor_port = 53,
     $setgid = 'pdns',
